@@ -128,6 +128,9 @@ export const fullRow = style({
   width: '100%',
   selectors: {
     '&:hover': { backgroundColor: theme.surface.onMainContentSubtle },
+    '&[data-active]': { backgroundColor: theme.pill.blue.background },
+    '&:focus': { outline: 'none' },
+    '&:focus-visible': { outline: 'none' },
   },
 })
 export const statusDot = style({
@@ -313,6 +316,10 @@ export const tabTrigger = style({
   marginBlockEnd: -1,
   paddingBlock: 8,
   paddingInline: 12,
+  selectors: {
+    '&:focus': { outline: 'none' },
+    '&:focus-visible': { outline: 'none' },
+  },
 })
 export const tabTriggerActive = style({
   borderBlockEndColor: theme.pill.green.color,
@@ -455,6 +462,8 @@ export const waterfallRowButton = style({
   width: '100%',
   selectors: {
     '&[role="button"]': { cursor: 'pointer' },
+    '&:focus': { outline: 'none' },
+    '&:focus-visible': { outline: 'none' },
   },
 })
 export const waterfallRowHover = style({
